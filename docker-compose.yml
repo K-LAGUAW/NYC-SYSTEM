@@ -5,5 +5,5 @@ services:
     volumes:
       - ./:/usr/src/app/
     ports:
-      - 80:8000
+      - 8000:8000
     restart: always
