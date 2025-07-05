@@ -140,7 +140,6 @@ class CompleteOrderView(APIView):
                         status=ShipmentsStatus.objects.get(abbreviation='ESO'),
                         package_type=PackageTypes.objects.get(abbreviation='PAQ'),
                         package_pickup=order.package_pickup,
-                        package_amount=package_amount,
                         sender=order.supplier,
                         recipient=order.customer,
                         phone=order.phone,

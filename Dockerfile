@@ -1,0 +1,22 @@
+FROM python:3.13-alpine3.21
+
+WORKDIR /usr/src/app
+
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+ENV SECRET_KEY LO8742&L7,O3Nc£>H%)]|%8H{vCIMx
+ENV ALLOWED_HOSTS *
+ENV DEBUG True
+
+ENV POSTGRESQL_DB nycdatabase
+ENV POSTGRESQL_USER nycuser
+ENV POSTGRESQL_PASSWORD kX91!)G45i
+ENV POSTGRESQL_HOST db.nyc-viajes.com.ar
+ENV POSTGRESQL_PORT 5432
+
+RUN pip install --upgrade pip
+COPY ./requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY . .
