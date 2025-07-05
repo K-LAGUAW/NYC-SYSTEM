@@ -1,0 +1,44 @@
+[
+    {
+        "model": "api.OrdersStatus",
+        "pk": 1,
+        "fields": {
+            "name": "Recibido",
+            "abbreviation": "REC"
+        }
+    },
+    {
+        "model": "api.OrdersStatus",
+        "pk": 2,
+        "fields": {
+            "name": "Entregado",
+            "abbreviation": "ENT"
+        }
+    },
+    {
+        "model": "api.PackageTypes",
+        "pk": 1,
+        "fields": {
+            "name": "Turismo",
+            "abbreviation": "TUR"
+        }
+    },
+    {
+        "model": "api.PackageTypes",
+        "pk": 2,
+        "fields": {
+            "name": "Paqueteria",
+            "abbreviation": "PAQ"
+        }
+    },
+    {
+        "model": "api.Parameters",
+        "pk": 1,
+        "fields": {
+            "name": "WSP_ORD",
+            "value": "Ya tenemos tu sobre para la entrega 🤑\n\nEl numero se seguimiento asignado es {tracking_number} 👌\n\nRelajate que nosotros nos encargamos 💯",
+            "description": "Mensaje de creacion de orden nueva."
+        }
+    }
+    
+]
